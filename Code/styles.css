@@ -22,7 +22,7 @@ body {
 .background-image {
   width: 100%;
   height: 100%;
-  background-image: url("Code/Images/halie-west-25xggax4bSA-unsplash.jpg"); /* Update path as needed */
+  background-image: url("Images/halie-west-25xggax4bSA-unsplash.jpg"); /* Update path as needed */
   background-size: cover;
   background-position: center;
   position: relative;
