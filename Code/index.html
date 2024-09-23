@@ -5,6 +5,7 @@
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <!-- Left Column -->
     <div class="col1">
@@ -83,5 +84,29 @@
         </p>
       </form>
     </div>
+    <!-- Password match script -->
+    <script>
+      const form = document.querySelector(".signup-form");
+      const password = document.querySelector("#password");
+      const confirmPassword = document.querySelector("#confirm-password");
+
+      form.addEventListener("submit", function (e) {
+        if (password.value !== confirmPassword.value) {
+          e.preventDefault();
+          alert("Passwords do not match.");
+          confirmPassword.setCustomValidity("Passwords do not match.");
+        } else {
+          confirmPassword.setCustomValidity("");
+        }
+      });
+
+      confirmPassword.addEventListener("input", function () {
+        if (password.value !== confirmPassword.value) {
+          confirmPassword.setCustomValidity("Passwords do not match.");
+        } else {
+          confirmPassword.setCustomValidity("");
+        }
+      });
+    </script>
   </body>
 </html>
