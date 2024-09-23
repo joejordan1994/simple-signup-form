@@ -1,55 +1,55 @@
-/* Reset and Box Sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styles */
 body {
   display: flex;
   min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/* Left Column */
 .col1 {
   flex: 1;
   position: relative;
 }
 
-/* Background Image */
 .background-image {
+  position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("Images/halie-west-25xggax4bSA-unsplash.jpg"); /* Update path as needed */
+  background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
-/* Logo Overlay */
 .logoBox {
   position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
-  color: white;
-  text-align: center;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  z-index: 2;
 }
 
 .logo-image {
-  width: 80px; /* Adjust size */
+  width: 90px;
+  margin-right: 10px;
 }
 
 .logo-text {
-  display: block;
-  font-family: "Norse-Bold", sans-serif; /* Ensure font is imported */
-  font-size: 3rem;
-  margin-top: 10px;
+  font-family: "Norse-Bold", sans-serif;
+  font-size: 6rem;
+  color: white;
+  line-height: 1;
 }
 
-/* Right Column */
 .col2 {
   flex: 1;
   padding: 50px;
@@ -59,7 +59,6 @@ body {
   justify-content: center;
 }
 
-/* Introductory Text */
 .intro-text {
   margin-bottom: 30px;
 }
@@ -69,19 +68,16 @@ body {
   line-height: 1.5;
 }
 
-/* Form Styles */
 .signup-form {
   display: flex;
   flex-direction: column;
 }
 
-/* Form Rows */
 .form-row {
   display: flex;
   justify-content: space-between;
 }
 
-/* Form Groups */
 .form-group {
   display: flex;
   flex-direction: column;
@@ -101,7 +97,6 @@ body {
   font-size: 1rem;
 }
 
-/* Submit Button */
 .createAcc {
   padding: 15px;
   background-color: #596d48;
@@ -117,7 +112,6 @@ body {
   background-color: #4e5f3e;
 }
 
-/* Login Link */
 .login-link {
   margin-top: 15px;
   font-size: 0.9rem;
@@ -132,14 +126,12 @@ body {
   text-decoration: underline;
 }
 
-/* Input Focus */
 .form-group input:focus {
   border-color: lightskyblue;
   background-color: #e3e1e1;
   outline: none;
 }
 
-/* Input Invalid */
 input:invalid {
   border-color: red;
 }
