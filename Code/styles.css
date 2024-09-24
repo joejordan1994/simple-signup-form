@@ -34,7 +34,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
 
@@ -81,7 +81,7 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
-  width: 48%; /* Adjust to fit two inputs per row */
+  width: 48%;
   margin-bottom: 20px;
 }
 
